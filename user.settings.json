@@ -1,0 +1,94 @@
+{
+  "[css]": {
+    "editor.colorDecorators": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[django-html]": {
+    "editor.defaultFormatter": null,
+    "editor.tabSize": 2
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnPaste": false,
+    "editor.tabSize": 4
+  },
+  "[yml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "atlascode.bitbucket.enabled": true,
+  "atlascode.jira.enabled": false,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": true,
+  "code-runner.saveFileBeforeRun": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "docker.images.sortBy": "CreatedTime",
+  "editor.defaultFormatter": null,
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontSize": 13,
+  "editor.formatOnSave": true,
+  "editor.rulers": [79, 119],
+  "editor.suggestSelection": "first",
+  "explorer.compactFolders": false,
+  "explorer.confirmDragAndDrop": false,
+  "files.associations": {
+    "*.css": "css"
+  },
+  "files.exclude": {
+    "**/.git": false
+  },
+  "files.insertFinalNewline": true,
+  "files.maxMemoryForLargeFilesMB": 8192,
+  "git.autofetch": true,
+  "git.fetchOnPull": true,
+  "gitlens.advanced.messages": {
+    "suppressCreatePullRequestPrompt": true
+  },
+  "gitlens.codeLens.scopes": ["document", "containers", "blocks"],
+  "gitlens.hovers.currentLine.over": "line",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "prettier.eslintIntegration": true,
+  "prettier.proseWrap": "always",
+  "python.formatting.blackArgs": ["--line-length", "79"],
+  "python.formatting.provider": "black",
+  "python.languageServer": "Pylance",
+  "python.showStartPage": false,
+  "redhat.telemetry.enabled": false,
+  "rewrap.autoWrap.enabled": true,
+  "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+  "terminal.integrated.fontSize": 13,
+  "todo-tree.tree.showScanModeButton": false,
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path.linux": "/home/seapagan/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vscode-kubernetes.kubectl-path.linux": "/home/seapagan/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path.linux": "/home/seapagan/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
+  },
+  "vsicons.dontShowNewVersionMessage": true,
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "window.zoomLevel": 1,
+  "workbench.colorTheme": "GitHub Dark",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.startupEditor": "newUntitledFile",
+  "yaml.schemas": {
+    "file:///home/seapagan/.vscode-server/extensions/atlassian.atlascode-2.9.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  }
+}
