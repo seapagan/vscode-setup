@@ -10,11 +10,11 @@ EXTENSION_LIST = "raw-extension-list.txt"
 OUTPUT_JSON = "global.extensions.json"
 
 
-output_dict = {"recomendations": []}
+output_dict = {"recommendations": []}
 
 with open(EXTENSION_LIST, "r") as file:
     for line in file:
-        output_dict["recomendations"].append(line.strip())
+        output_dict["recommendations"].append(line.strip())
 
 with open(OUTPUT_JSON, "w") as file:
     file.write(json.dumps(output_dict, indent=4))
