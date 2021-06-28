@@ -28,12 +28,12 @@
     "./dev-scripting"
   ],
   "python.formatting.blackArgs": [
-    "--line-length=79"
+    "--line-length=80"
   ],
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.linting.flake8Args": [
-    "--max-line-length=79"
+    "--max-line-length=80"
   ],
   "python.linting.flake8Enabled": true,
   "python.linting.pylintArgs": [
