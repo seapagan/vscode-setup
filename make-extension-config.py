@@ -23,11 +23,11 @@ else:
     code_environment = "global"
 print(f"Saving extensions.json for the '{code_environment}' environment.")
 
-output_dict = {"recomendations": []}
-# print(result)
+output_dict = {"recommendations": []}
 
 for extension in result:
-    output_dict["recomendations"].append(extension.strip())
+    output_dict["recommendations"].append(extension.strip())
+
 
 with open(f"{code_environment}{OUTPUT_JSON}", "w") as file:
     file.write(json.dumps(output_dict, indent=4))
