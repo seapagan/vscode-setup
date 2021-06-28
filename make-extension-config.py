@@ -1,20 +1,33 @@
 """
-Create a 'global.extensions.json' file based on a test file listing
-VSCode extensions, this should be renamed to 'extensions.json' and placed in
-the final vscode directiory
+Create an 'extensions.json' file based on the extensions installed in the
+currently active environment (local or remote)
 """
 
 import json
+import subprocess
 
-EXTENSION_LIST = "raw-extension-list.txt"
-OUTPUT_JSON = "global.extensions.json"
+OUTPUT_JSON = ".extensions.json"
 
+# get a dump of the installed extensions from the local vcsode installation
+result = (
+    subprocess.run(["code", "--list-extensions"], stdout=subprocess.PIPE)
+    .stdout.decode("utf-8")
+    .splitlines()
+)
+
+# if remote, the first line is the name of the environment we're running this
+# on.
+if "Extensions installed" in result[0]:
+    code_environment = result.pop(0).split(":")[1].strip()
+else:
+    code_environment = "global"
+print(f"Saving extensions.json for the '{code_environment}' environment.")
 
 output_dict = {"recomendations": []}
+# print(result)
 
-with open(EXTENSION_LIST, "r") as file:
-    for line in file:
-        output_dict["recomendations"].append(line.strip())
+for extension in result:
+    output_dict["recomendations"].append(extension.strip())
 
-with open(OUTPUT_JSON, "w") as file:
+with open(f"{code_environment}{OUTPUT_JSON}", "w") as file:
     file.write(json.dumps(output_dict, indent=4))
