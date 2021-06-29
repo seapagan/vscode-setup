@@ -27,6 +27,9 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
+  "beautify.language": {
+    "html": ["htm", "html", "django-html"]
+  },
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
@@ -63,6 +66,11 @@
   },
   "gitlens.codeLens.scopes": ["document", "containers", "blocks"],
   "gitlens.hovers.currentLine.over": "line",
+  "html.format.endWithNewline": true,
+  "html.format.indentHandlebars": true,
+  "html.format.indentInnerHtml": true,
+  "html.format.templating": true,
+  "html.format.wrapLineLength": 80,
   "liveServer.settings.donotShowInfoMsg": true,
   "prettier.proseWrap": "always",
   "python.showStartPage": false,
@@ -83,10 +91,10 @@
   "window.zoomLevel": 0,
   "workbench.colorTheme": "GitHub Dark",
   "workbench.editor.highlightModifiedTabs": true,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.productIconTheme": "material-product-icons",
-  "workbench.startupEditor": "none",
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter.notebook.ipynb"
-  }
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.startupEditor": "none"
 }
