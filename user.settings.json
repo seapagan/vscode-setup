@@ -4,10 +4,11 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[django-html]": {
-    "editor.defaultFormatter": null,
+    "editor.defaultFormatter": "HookyQR.beautify",
     "editor.tabSize": 2
   },
   "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "[javascript]": {
