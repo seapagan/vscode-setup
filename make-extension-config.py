@@ -1,4 +1,5 @@
-"""
+"""Extension list to JSON.
+
 Create an 'extensions.json' file based on the extensions installed in the
 currently active environment (local or remote)
 """
