@@ -34,6 +34,7 @@
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
+  "cornflakes.linter.run": "onType",
   "diffEditor.ignoreTrimWhitespace": false,
   "docker.images.sortBy": "CreatedTime",
   "editor.codeActionsOnSave": {
@@ -50,6 +51,9 @@
   "editor.rulers": [80, 120],
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
+  "errorLens.fontStyleItalic": true,
+  "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconSet": "defaultOutline",
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
@@ -80,6 +84,7 @@
   "python.showStartPage": false,
   "redhat.telemetry.enabled": false,
   "rewrap.autoWrap.enabled": true,
+  "rewrap.wrappingColumn": 80,
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
