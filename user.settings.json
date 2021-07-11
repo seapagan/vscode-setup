@@ -20,6 +20,11 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[markdown]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.markdownlint": true
+    }
+  },
   "[python]": {
     "editor.defaultFormatter": "ms-python.python",
     "editor.tabSize": 4
