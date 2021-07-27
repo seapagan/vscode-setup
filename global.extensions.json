@@ -77,12 +77,13 @@
     "wix.vscode-import-cost",
     "xabikos.JavaScriptSnippets",
     "xabikos.ReactSnippets",
-    "yatki.vscode-surround",
     "yzhang.markdown-all-in-one",
     "uyiosa-enabulele.reopenclosedtab",
     "dzgmelody.vscode-changelog-snippets",
     "ms-vscode.live-server",
     "github.vscode-pull-request-github",
-    "ultram4rine.vscode-choosealicense"
+    "ultram4rine.vscode-choosealicense",
+    "davidanson.vscode-markdownlint",
+    "shd101wyy.markdown-preview-enhanced"
   ]
 }
