@@ -22,7 +22,7 @@ depend on having the same extensions installed as I do, from the
 - [.vscode-python](./.vscode-python/) : Settings specific to the Python
   programming language. Rename folder as `.vscode` and place in your project
   folder.
-- [.vscode-python](./.vscode-react/) : Settings specific to the React
+- [.vscode-react](./.vscode-react/) : Settings specific to the React
   programming language. Rename folder as `.vscode` and place in your project
   folder.
 
