@@ -4,6 +4,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[django-html]": {
+    "editor.bracketPairColorization.enabled": false,
     "editor.defaultFormatter": "HookyQR.beautify",
     "editor.tabSize": 2
   },
@@ -12,7 +13,8 @@
     "editor.tabSize": 2
   },
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -26,18 +28,22 @@
   "[markdown]": {
     "editor.codeActionsOnSave": {
       "source.fixAll.markdownlint": true
-    }
+    },
+    "editor.quickSuggestions": true
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.python",
     "editor.tabSize": 4
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[yml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "beautify.language": {
-    "html": ["htm", "html", "django-html"]
+    "html": ["django-html"]
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
@@ -45,18 +51,22 @@
   "cornflakes.linter.run": "onType",
   "diffEditor.ignoreTrimWhitespace": false,
   "docker.images.sortBy": "CreatedTime",
+  "editor.bracketPairColorization.enabled": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.markdownlint": true
   },
   "editor.defaultFormatter": null,
   "editor.folding": false,
   "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.linkedEditing": true,
+  "editor.parameterHints.enabled": false,
   "editor.rulers": [80, 120],
+  "editor.suggest.preview": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
   "errorLens.fontStyleItalic": true,
@@ -77,16 +87,26 @@
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
   "git.fetchOnPull": true,
+  "git.showPushSuccessNotification": true,
   "gitlens.advanced.messages": {
     "suppressCreatePullRequestPrompt": true
   },
   "gitlens.codeLens.scopes": ["document", "containers", "blocks"],
+  "gitlens.gitCommands.skipConfirmations": [
+    "fetch:command",
+    "stash-push:command",
+    "switch:command",
+    "pull:command"
+  ],
   "gitlens.hovers.currentLine.over": "line",
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
   "html.format.templating": true,
   "html.format.wrapLineLength": 80,
+  "license.author": "Grant Ramsay",
+  "license.extension": ".txt",
+  "license.year": "auto",
   "liveServer.settings.donotShowInfoMsg": true,
   "notebook.cellToolbarLocation": {
     "default": "right",
@@ -96,6 +116,7 @@
   "python.showStartPage": false,
   "redhat.telemetry.enabled": false,
   "remote.SSH.remotePlatform": {
+    "boralus": "linux",
     "macbuntu": "linux"
   },
   "rewrap.autoWrap.enabled": true,
