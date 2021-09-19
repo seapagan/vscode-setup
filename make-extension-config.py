@@ -31,4 +31,4 @@ for extension in result:
 
 
 with open(f"{code_environment}{OUTPUT_JSON}", "w") as file:
-    file.write(json.dumps(output_dict, indent=4))
+    file.write(json.dumps(output_dict, indent=2))
