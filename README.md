@@ -10,8 +10,8 @@ depend on having the same extensions installed as I do, from the
 
 - [user-settings.json](./user.settings.json) : Complete `User` settings, for
   global use, to replace the existing main settings.
-- [wsl.settings.json](./wsl.settings.json) : `Remote` settings for use in WSL or
-  remote SSH sessions.
+- [remote.settings.json](./remote.settings.json) : `Remote` settings for use in
+  WSL or remote SSH sessions.
 - [global.extensions.json](./global.extensions.json) : rename this to
   `extensions.json` and place in the `.vscode` subfolder. This will add all the
   listed extensions as suggestions when you next open VSCode in the parent
