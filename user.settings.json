@@ -14,10 +14,16 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -33,10 +39,19 @@
   },
   "[python]": {
     "editor.defaultFormatter": "ms-python.python",
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
   },
   "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -59,30 +74,38 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.markdownlint": true
   },
+  "editor.codeLensFontFamily": "Jetbrains Mono",
   "editor.defaultFormatter": null,
   "editor.folding": false,
-  "editor.fontFamily": "JetBrains Mono, Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "Jetbrains Mono, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
+  "editor.inlineSuggest.enabled": true,
   "editor.linkedEditing": true,
+  "editor.mouseWheelZoom": true,
   "editor.parameterHints.enabled": false,
   "editor.rulers": [80, 120],
+  "editor.snippetSuggestions": "top",
+  "editor.suggest.localityBonus": true,
   "editor.suggest.preview": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
+  "emmet.showAbbreviationSuggestions": true,
+  "emmet.showExpandedAbbreviation": "always",
   "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
   "errorLens.fontStyleItalic": true,
   "errorLens.gutterIconsEnabled": true,
   "errorLens.gutterIconSet": "defaultOutline",
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
-    "*.css": "css",
-    ".coveragerc": "ini"
+    ".coveragerc": "ini",
+    "*.css": "css"
   },
   "files.eol": "\n",
   "files.exclude": {
@@ -96,6 +119,13 @@
   "git.confirmSync": false,
   "git.fetchOnPull": true,
   "git.showPushSuccessNotification": true,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": false,
+    "plaintext": false,
+    "sql": false,
+    "yaml": true
+  },
   "gitlens.advanced.messages": {
     "suppressCreatePullRequestPrompt": true
   },
@@ -124,13 +154,23 @@
     "jupyter-notebook": "left"
   },
   "prettier.proseWrap": "always",
+  "python.defaultInterpreterPath": "C:\\Users\\sea_p\\.pyenv\\pyenv-win\\versions\\3.9.6\\python.exe",
+  "python.pythonPath": "C:\\Users\\sea_p\\.pyenv\\pyenv-win\\versions\\3.9.6\\python.exe",
   "python.showStartPage": false,
   "redhat.telemetry.enabled": false,
   "remote.SSH.configFile": "C:\\Users\\sea_p\\.ssh\\config",
   "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
-  "remote.SSH.remotePlatform": {},
+  "remote.SSH.remotePlatform": {
+    "aws-django": "linux",
+    "boralus": "linux",
+    "dev-box": "linux",
+    "kali": "linux",
+    "macbuntu": "linux",
+    "tomato-sawfish-uvfcz2f9": "linux"
+  },
   "rewrap.autoWrap.enabled": true,
   "rewrap.wrappingColumn": 80,
+  "sql-formatter.uppercase": true,
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
@@ -149,6 +189,7 @@
   "vsicons.dontShowNewVersionMessage": true,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   "window.restoreWindows": "none",
+  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
   "window.zoomLevel": 1,
   "workbench.colorTheme": "Cobalt2",
   "workbench.editor.highlightModifiedTabs": true,
@@ -157,17 +198,5 @@
   },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
-  "workbench.startupEditor": "none",
-  "editor.suggest.localityBonus": true,
-  "editor.codeLensFontFamily": "Jetbrains Mono",
-  "editor.mouseWheelZoom": true,
-  "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
-  "python.pythonPath": "python",
-  "editor.inlineSuggest.enabled": true,
-  "github.copilot.enable": {
-    "*": true,
-    "yaml": true,
-    "plaintext": false,
-    "markdown": false
-  }
+  "workbench.startupEditor": "none"
 }
