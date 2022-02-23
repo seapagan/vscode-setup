@@ -1,7 +1,8 @@
 {
   "[css]": {
     "editor.colorDecorators": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[django-html]": {
     "editor.bracketPairColorization.enabled": false,
@@ -37,6 +38,9 @@
     },
     "editor.quickSuggestions": true
   },
+  "[php]": {
+    "editor.defaultFormatter": "junstyle.php-cs-fixer"
+  },
   "[python]": {
     "editor.defaultFormatter": "ms-python.python",
     "editor.tabSize": 4,
@@ -62,18 +66,16 @@
     "editor.tabSize": 2
   },
   "beautify.language": {
-    "html": ["django-html"]
+    "html": [
+      "django-html"
+    ]
   },
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
-  "cornflakes.linter.run": "onType",
   "diffEditor.ignoreTrimWhitespace": false,
   "docker.images.sortBy": "CreatedTime",
   "editor.bracketPairColorization.enabled": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.markdownlint": true
-  },
   "editor.codeLensFontFamily": "Jetbrains Mono",
   "editor.defaultFormatter": null,
   "editor.folding": false,
@@ -88,12 +90,18 @@
   "editor.linkedEditing": true,
   "editor.mouseWheelZoom": true,
   "editor.parameterHints.enabled": false,
-  "editor.rulers": [80, 120],
+  "editor.rulers": [
+    80,
+    120
+  ],
   "editor.snippetSuggestions": "top",
   "editor.suggest.localityBonus": true,
   "editor.suggest.preview": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
+  "emmet.excludeLanguages": [
+    "markdown"
+  ],
   "emmet.showAbbreviationSuggestions": true,
   "emmet.showExpandedAbbreviation": "always",
   "emmet.showSuggestionsAsSnippets": true,
@@ -105,7 +113,8 @@
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
     ".coveragerc": "ini",
-    "*.css": "css"
+    "*.css": "css",
+    "*.php": "php"
   },
   "files.eol": "\n",
   "files.exclude": {
@@ -129,7 +138,11 @@
   "gitlens.advanced.messages": {
     "suppressCreatePullRequestPrompt": true
   },
-  "gitlens.codeLens.scopes": ["document", "containers", "blocks"],
+  "gitlens.codeLens.scopes": [
+    "document",
+    "containers",
+    "blocks"
+  ],
   "gitlens.gitCommands.skipConfirmations": [
     "fetch:command",
     "stash-push:command",
@@ -159,7 +172,9 @@
   "python.showStartPage": false,
   "redhat.telemetry.enabled": false,
   "remote.SSH.configFile": "C:\\Users\\sea_p\\.ssh\\config",
-  "remote.SSH.defaultExtensions": ["gitpod.gitpod-remote-ssh"],
+  "remote.SSH.defaultExtensions": [
+    "gitpod.gitpod-remote-ssh"
+  ],
   "remote.SSH.remotePlatform": {
     "aws-django": "linux",
     "boralus": "linux",
