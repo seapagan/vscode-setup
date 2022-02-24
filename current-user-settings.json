@@ -24,8 +24,7 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     },
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -173,15 +172,22 @@
   "php.suggest.basic": true,
   "php.validate.enable": true,
   "prettier.proseWrap": "always",
-  "python.defaultInterpreterPath": "",
-  "python.pythonPath": "",
+  "python.defaultInterpreterPath": "C:\\Users\\sea_p\\.pyenv\\pyenv-win\\versions\\3.9.6\\python.exe",
+  "python.pythonPath": "C:\\Users\\sea_p\\.pyenv\\pyenv-win\\versions\\3.9.9\\python.exe",
   "python.showStartPage": false,
   "redhat.telemetry.enabled": false,
   "remote.SSH.configFile": "C:\\Users\\sea_p\\.ssh\\config",
   "remote.SSH.defaultExtensions": [
     "gitpod.gitpod-remote-ssh"
   ],
-  "remote.SSH.remotePlatform": {},
+  "remote.SSH.remotePlatform": {
+    "aws-django": "linux",
+    "boralus": "linux",
+    "dev-box": "linux",
+    "kali": "linux",
+    "macbuntu": "linux",
+    "tomato-sawfish-uvfcz2f9": "linux"
+  },
   "rewrap.autoWrap.enabled": true,
   "rewrap.wrappingColumn": 80,
   "sql-formatter.uppercase": true,

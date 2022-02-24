@@ -5,7 +5,6 @@
     }
   },
   "autoDocstring.startOnNewLine": true,
-  "cornflakes.linter.run": "onType",
   "editor.formatOnPaste": false,
   "emmet.includeLanguages": {
     "django-html": "html"
@@ -22,6 +21,7 @@
     "**/__pycache__": true
   },
   "git.alwaysSignOff": true,
+  // "git.enableCommitSigning": true,
   "html.format.indentHandlebars": true,
   "html.format.templating": true,
   "python.analysis.extraPaths": [],
@@ -32,7 +32,7 @@
   "python.linting.flake8Args": ["--max-line-length=80"],
   "python.linting.flake8Enabled": true,
   "python.linting.pydocstyleArgs": ["--convention=google"],
-  // "python.linting.pydocstyleEnabled": true,
+  "python.linting.pydocstyleEnabled": true,
   "python.linting.pylintArgs": [
     "--load-plugins",
     "pylint_django",
