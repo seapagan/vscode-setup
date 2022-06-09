@@ -1,0 +1,46 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+  - rubocop-rails
+
+AllCops:
+  TargetRubyVersion: 2.7.6
+  NewCops: enable
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  ExtraDetails: true
+  Exclude:
+    - bin/**/*
+    - vendor/**/*
+    - db/schema.rb
+
+Metrics/BlockLength:
+  Enabled: true
+  Exclude:
+    - spec/**/*
+
+Metrics/MethodLength:
+  Enabled: false
+  Exclude:
+    - spec/**/*
+
+Metrics/AbcSize:
+  Enabled: false
+
+# Rails Rule configuration
+Rails/FilePath:
+  EnforcedStyle: arguments
+
+Rails/Output:
+  Exclude:
+    - db/seeds.rb
+
+# RSpec Rule configuration
+RSpec/MultipleExpectations:
+  Max: 3
+
+RSpec/FilePath:
+  Enabled: false
+
+RSpec/ExampleLength:
+  Enabled: false
