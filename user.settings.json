@@ -49,6 +49,13 @@
     "editor.defaultFormatter": "ms-python.python",
     "editor.tabSize": 4
   },
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop",
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
   },
@@ -76,6 +83,7 @@
   "code-runner.saveFileBeforeRun": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "docker.images.sortBy": "CreatedTime",
+  "editor.acceptSuggestionOnEnter": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeLensFontFamily": "Jetbrains Mono",
   "editor.defaultFormatter": null,
@@ -87,6 +95,7 @@
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": true,
   "editor.inlineSuggest.enabled": true,
   "editor.linkedEditing": true,
   "editor.mouseWheelZoom": true,
@@ -115,6 +124,8 @@
   "files.associations": {
     ".coveragerc": "ini",
     "*.css": "css",
+    "*.html.erb": "erb",
+    "*.jsx": "javascriptreact",
     "*.php": "php"
   },
   "files.eol": "\n",
@@ -131,13 +142,18 @@
   "git.showPushSuccessNotification": true,
   "github.copilot.enable": {
     "*": true,
-    "javascript": true,
-    "markdown": false,
-    "php": false,
+    "yaml": true,
     "plaintext": false,
+    "markdown": false,
+    "erb": false,
+    "javascript": true,
+    "javascriptreact": true,
+    "php": false,
+    "ruby": true,
     "sql": true,
-    "yaml": true
+    "python": true
   },
+  "githubPullRequests.createOnPublishBranch": "never",
   "gitlens.advanced.messages": {
     "suppressCreatePullRequestPrompt": true
   },
@@ -164,20 +180,21 @@
   "license.author": "Grant Ramsay",
   "license.extension": ".txt",
   "license.year": "auto",
-  "livePreview.notifyOnOpenLooseFile": false,
   "liveServer.settings.donotShowInfoMsg": true,
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "right"
   },
+  "notebook.output.textLineLimit": 500,
   "php.suggest.basic": true,
   "php.validate.enable": true,
   "prettier.proseWrap": "always",
+  "prettier.quoteProps": "preserve",
   "python.defaultInterpreterPath": "",
   "python.pythonPath": "",
   "python.showStartPage": false,
   "redhat.telemetry.enabled": false,
-  "remote.SSH.configFile": "C:\\Users\\sea_p\\.ssh\\config",
+  "remote.SSH.configFile": "",
   "remote.SSH.defaultExtensions": [
     "gitpod.gitpod-remote-ssh"
   ],
@@ -194,6 +211,7 @@
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.shellIntegration.enabled": true,
   "vs-kubernetes": {
     "vscode-kubernetes.helm-path.linux": "/home/seapagan/.vs-kubernetes/tools/helm/linux-amd64/helm",
     "vscode-kubernetes.kubectl-path.linux": "/home/seapagan/.vs-kubernetes/tools/kubectl/kubectl",
@@ -201,7 +219,7 @@
     "vscode-kubernetes.minikube-path.linux": "/home/seapagan/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
   },
   "vsicons.dontShowNewVersionMessage": true,
-  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
   "window.restoreWindows": "none",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
   "window.zoomLevel": 1,
@@ -212,5 +230,34 @@
   },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "cSpell.userWords": [
+    "browserslist",
+    "cpan",
+    "cpanm",
+    "Dialogs",
+    "gnramsay",
+    "linebreak",
+    "Perlbrew",
+    "plugins",
+    "Pyenv",
+    "recapcha",
+    "Recaptcha",
+    "sass",
+    "seapagan",
+    "SSID",
+    "sudo",
+    "vars"
+  ],
+  "cSpell.ignoreWords": [
+    "geoip",
+    "mmdb"
+  ],
+  "cSpell.language": "en-GB",
+  "cSpell.enableFiletypes": [
+    "!markdown",
+    "django-html",
+    "ruby"
+  ]
 }
