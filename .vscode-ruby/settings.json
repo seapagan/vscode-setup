@@ -1,0 +1,34 @@
+{
+  "errorLens.enabled": false,
+  "ruby.format": "rubocop",
+  "ruby.lint": {
+    "reek": false,
+    // "rubocop": false,
+    // "reek": {
+    //   "useBundler": true
+    // },
+    "rubocop": {
+      "useBundler": true
+    },
+    "standard": false
+  },
+  "ruby.rubocop.onSave": true,
+  "ruby.rubocop.useBundler": true,
+  "ruby.useBundler": true,
+  "ruby.useLanguageServer": true,
+
+  "rubyTestExplorer.testFramework": "none",
+  // "rubyTestExplorer.minitestDirectory": "./spec/",
+  // "rubyTestExplorer.logpanel": true,
+  "rubyTestExplorer.rspecCommand": "spring rspec",
+  "emmet.includeLanguages": {
+    "erb": "html"
+  },
+  "rewrap.autoWrap.enabled": false,
+  "editor.folding": true,
+  "rubyTestExplorer.minitestDirectory": "./spec/",
+  "testExplorer.addToEditorContextMenu": true,
+  // "ruby.rubocop.executePath": "./bin/",
+  "ruby.specCommand": "spring rspec",
+  "testExplorer.hideWhen": "never"
+}

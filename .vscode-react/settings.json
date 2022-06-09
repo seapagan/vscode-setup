@@ -1,4 +1,7 @@
 {
+  "cSpell.enableFiletypes": ["!javascript", "!json", "!markdown"],
+  "cSpell.words": ["fontawesome", "fortawesome", "reduxjs"],
+  "css.customData": ["./.vscode/custom.css-data.json"],
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
@@ -22,6 +25,7 @@
     "typescript",
     "typescriptreact"
   ],
+  "explorer.compactFolders": false,
   "files.associations": {
     "*.js": "javascriptreact"
   },
@@ -29,11 +33,10 @@
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
+  "git.enableCommitSigning": true,
   "prettier.arrowParens": "avoid",
   "prettier.jsxBracketSameLine": true,
   "prettier.packageManager": "yarn",
   "prettier.tabWidth": 2,
-  "css.customData": ["./.vscode/custom.css-data.json"],
-  "explorer.compactFolders": false,
-  "git.enableCommitSigning": true
+  "editor.folding": true
 }
