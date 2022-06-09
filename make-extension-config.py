@@ -11,7 +11,7 @@ OUTPUT_JSON = ".extensions.json"
 
 # get a dump of the installed extensions from the local vcsode installation
 result = (
-    subprocess.run(["code", "--list-extensions"], stdout=subprocess.PIPE)
+    subprocess.run(["code", "--list-extensions"], stdout=subprocess.PIPE, shell=True)
     .stdout.decode("utf-8")
     .splitlines()
 )
