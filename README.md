@@ -16,6 +16,9 @@ depend on having the same extensions installed as I do, from the
   `extensions.json` and place in the `.vscode` subfolder. This will add all the
   listed extensions as suggestions when you next open VSCode in the parent
   directory of that folder.
+- [keybindings.json](./keybindings.json) : contains custom keybindings. Open the 
+  `keyboard shortcuts` from the settings menu and replace with the contents of
+  this file.
 
 ## Folders
 
