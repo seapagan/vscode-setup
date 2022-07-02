@@ -1,0 +1,38 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder",
+    "when": "explorerViewletFocus"
+  },
+  {
+    "key": "ctrl+alt+k",
+    "command": "-code-runner.runCustomCommand"
+  },
+  {
+    "key": "ctrl+alt+insert",
+    "command": "bookmarks.list"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-expandLineSelection",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.terminal.clear",
+    "when": "terminalFocus"
+  },
+  // Toggle between terminal and editor focus
+  { "key": "ctrl+`", "command": "workbench.action.terminal.focus" },
+  {
+    "key": "ctrl+`",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  }
+]
