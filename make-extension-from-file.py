@@ -5,7 +5,7 @@ Create an 'extensions.json' file based on a dumped text file
 
 import json
 
-OUTPUT_JSON = ".extensions.json"
+OUTPUT_JSON = ".insiders-extensions.json"
 
 with open("extensions.list") as file:
     result = file.read().splitlines()
@@ -18,7 +18,7 @@ else:
     code_environment = "global"
 print(f"Saving extensions.json for the '{code_environment}' environment.")
 
-output_dict = {"recommendations": []}
+output_dict: dict[str, list[str]] = {"recommendations": []}
 
 for extension in result:
     output_dict["recommendations"].append(extension.strip())

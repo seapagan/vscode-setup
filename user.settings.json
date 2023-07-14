@@ -10,7 +10,7 @@
     "editor.tabSize": 2
   },
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "vscode.html-language-features",
     "editor.tabSize": 2
   },
   "[javascript]": {
@@ -37,7 +37,11 @@
     "editor.codeActionsOnSave": {
       "source.fixAll.markdownlint": true
     },
-    "editor.quickSuggestions": true
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "other": "on",
+      "strings": "on"
+    }
   },
   "[php]": {
     "editor.defaultFormatter": "junstyle.php-cs-fixer"
@@ -66,13 +70,14 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.tabSize": 2
   },
   "[yml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.tabSize": 2
   },
+  "arduino.useArduinoCli": true,
   "beautify.language": {
     "html": [
       "django-html"
@@ -81,6 +86,9 @@
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
+  "CodeGPT.model": "gpt-4",
+  "codeQL.telemetry.enableTelemetry": true,
+  "comment-divider.shouldLengthIncludeIndent": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "docker.images.sortBy": "CreatedTime",
   "editor.acceptSuggestionOnEnter": "off",
@@ -91,6 +99,7 @@
   "editor.fontFamily": "Jetbrains Mono, Consolas, 'Courier New', monospace",
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
+  "editor.fontWeight": "normal",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
@@ -105,6 +114,7 @@
     120
   ],
   "editor.snippetSuggestions": "top",
+  "editor.stickyScroll.enabled": false,
   "editor.suggest.localityBonus": true,
   "editor.suggest.preview": true,
   "editor.suggestSelection": "first",
@@ -123,10 +133,14 @@
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
     ".coveragerc": "ini",
+    ".env.local": "jinja-properties",
+    ".htmlvalidateignore": "gitignore",
     "*.css": "css",
     "*.html.erb": "erb",
+    "*.jinja": "jinja",
     "*.jsx": "javascriptreact",
-    "*.php": "php"
+    "*.php": "php",
+    "LICENSE": "plaintext"
   },
   "files.eol": "\n",
   "files.exclude": {
@@ -142,18 +156,24 @@
   "git.showPushSuccessNotification": true,
   "github.copilot.enable": {
     "*": true,
-    "yaml": true,
-    "plaintext": false,
-    "markdown": false,
+    "css": false,
     "erb": false,
     "javascript": true,
     "javascriptreact": true,
+    "markdown": true,
     "php": false,
+    "plaintext": false,
+    "python": true,
     "ruby": true,
+    "scminput": false,
+    "scss": true,
     "sql": true,
-    "python": true
+    "typescript": true,
+    "yaml": true
   },
+  "github.copilot.inlineSuggest.enable": true,
   "githubPullRequests.createOnPublishBranch": "never",
+  "githubPullRequests.pullBranch": "never",
   "gitlens.advanced.messages": {
     "suppressCreatePullRequestPrompt": true
   },
@@ -176,21 +196,29 @@
   "html.format.indentInnerHtml": true,
   "html.format.templating": true,
   "html.format.wrapLineLength": 80,
+  "isort.importStrategy": "fromEnvironment",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "license.author": "Grant Ramsay",
+  "license.default": "mit",
   "license.extension": ".txt",
   "license.year": "auto",
   "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "markdown-preview-github-styles.colorTheme": "system",
   "notebook.cellToolbarLocation": {
     "default": "right",
     "jupyter-notebook": "right"
   },
   "notebook.output.textLineLimit": 500,
+  "notebook.output.wordWrap": true,
+  "open-in-browser.default": "firefox",
   "php.suggest.basic": true,
   "php.validate.enable": true,
   "prettier.proseWrap": "always",
   "prettier.quoteProps": "preserve",
-  "python.defaultInterpreterPath": "",
+  "python.defaultInterpreterPath": "/home/seapagan/.pyenv/shims/python",
+  "python.interpreter.infoVisibility": "always",
   "python.pythonPath": "",
   "python.showStartPage": false,
   "redhat.telemetry.enabled": false,
@@ -201,7 +229,13 @@
   "remote.SSH.remotePlatform": {},
   "rewrap.autoWrap.enabled": true,
   "rewrap.wrappingColumn": 80,
+  "sonarlint.rules": {
+    "javascript:S6480": {
+      "level": "off"
+    }
+  },
   "sql-formatter.uppercase": true,
+  "stylelint.packageManager": "yarn",
   "telemetry.telemetryLevel": "off",
   "terminal.integrated.copyOnSelection": true,
   "terminal.integrated.cursorBlinking": true,
@@ -212,14 +246,16 @@
   "terminal.integrated.fontSize": 13,
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.shellIntegration.enabled": true,
+  "testExplorer.useNativeTesting": false,
   "vs-kubernetes": {
+    "vs-kubernetes.minikube-show-information-expiration": "2023-11-04T10:17:10.707Z",
     "vscode-kubernetes.helm-path.linux": "/home/seapagan/.vs-kubernetes/tools/helm/linux-amd64/helm",
     "vscode-kubernetes.kubectl-path.linux": "/home/seapagan/.vs-kubernetes/tools/kubectl/kubectl",
     "vscode-kubernetes.kubectl-path.windows": "C:\\Users\\sea_p\\.vs-kubernetes\\tools\\kubectl\\kubectl.exe",
     "vscode-kubernetes.minikube-path.linux": "/home/seapagan/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
   },
-  "vsicons.dontShowNewVersionMessage": true,
   "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
+  "window.commandCenter": true,
   "window.restoreWindows": "none",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
   "window.zoomLevel": 1,
@@ -230,34 +266,5 @@
   },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
-  "workbench.startupEditor": "none",
-  "markdown-preview-enhanced.previewTheme": "github-light.css",
-  "cSpell.userWords": [
-    "browserslist",
-    "cpan",
-    "cpanm",
-    "Dialogs",
-    "gnramsay",
-    "linebreak",
-    "Perlbrew",
-    "plugins",
-    "Pyenv",
-    "recapcha",
-    "Recaptcha",
-    "sass",
-    "seapagan",
-    "SSID",
-    "sudo",
-    "vars"
-  ],
-  "cSpell.ignoreWords": [
-    "geoip",
-    "mmdb"
-  ],
-  "cSpell.language": "en-GB",
-  "cSpell.enableFiletypes": [
-    "!markdown",
-    "django-html",
-    "ruby"
-  ]
+  "workbench.startupEditor": "none"
 }

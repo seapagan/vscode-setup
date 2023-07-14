@@ -7,14 +7,21 @@ currently active environment (local or remote)
 import json
 import subprocess
 
-OUTPUT_JSON = ".extensions.json"
+OUTPUT_JSON = ".insiders-extensions.json"
+CODE_VERSION = "code"
 
 # get a dump of the installed extensions from the local vcsode installation
 result = (
-    subprocess.run(["code", "--list-extensions"], stdout=subprocess.PIPE, shell=True)
+    subprocess.run(
+        [CODE_VERSION, "--list-extensions"],
+        stdout=subprocess.PIPE,
+        shell=True,
+    )
     .stdout.decode("utf-8")
     .splitlines()
 )
+
+print(f"Found {len(result)} extensions installed.")
 
 # if remote, the first line is the name of the environment we're running this
 # on.
@@ -24,7 +31,7 @@ else:
     code_environment = "global"
 print(f"Saving extensions.json for the '{code_environment}' environment.")
 
-output_dict = {"recommendations": []}
+output_dict: dict[str, list[str]] = {"recommendations": []}
 
 for extension in result:
     output_dict["recommendations"].append(extension.strip())
