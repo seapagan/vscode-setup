@@ -1,4 +1,5 @@
 {
+  "CodeGPT.model": "gpt-4",
   "[css]": {
     "editor.colorDecorators": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -26,6 +27,9 @@
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
+  },
+  "[jinja-html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
   },
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
@@ -86,7 +90,6 @@
   "code-runner.clearPreviousOutput": true,
   "code-runner.runInTerminal": true,
   "code-runner.saveFileBeforeRun": true,
-  "CodeGPT.model": "gpt-4",
   "codeQL.telemetry.enableTelemetry": true,
   "comment-divider.shouldLengthIncludeIndent": true,
   "diffEditor.ignoreTrimWhitespace": false,
@@ -127,19 +130,20 @@
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
   "errorLens.fontStyleItalic": true,
-  "errorLens.gutterIconsEnabled": true,
   "errorLens.gutterIconSet": "defaultOutline",
+  "errorLens.gutterIconsEnabled": true,
+  "explorer.autoReveal": "focusNoScroll",
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
-    ".coveragerc": "ini",
-    ".env.local": "jinja-properties",
-    ".htmlvalidateignore": "gitignore",
     "*.css": "css",
     "*.html.erb": "erb",
     "*.jinja": "jinja",
     "*.jsx": "javascriptreact",
     "*.php": "php",
+    ".coveragerc": "ini",
+    ".env.local": "jinja-properties",
+    ".htmlvalidateignore": "gitignore",
     "LICENSE": "plaintext"
   },
   "files.eol": "\n",
@@ -154,6 +158,19 @@
   "git.confirmSync": false,
   "git.fetchOnPull": true,
   "git.showPushSuccessNotification": true,
+  "github.copilot.advanced": {
+    "indentationMode": {
+      "*": true,
+      "go": false,
+      "javascript": true,
+      "javascriptreact": true,
+      "jsx": true,
+      "python": true,
+      "ruby": true,
+      "typescript": true,
+      "typescriptreact": true
+    }
+  },
   "github.copilot.enable": {
     "*": true,
     "css": false,
@@ -217,7 +234,7 @@
   "php.validate.enable": true,
   "prettier.proseWrap": "always",
   "prettier.quoteProps": "preserve",
-  "python.defaultInterpreterPath": "/home/seapagan/.pyenv/shims/python",
+  "python.defaultInterpreterPath": ".venv/bin/python",
   "python.interpreter.infoVisibility": "always",
   "python.pythonPath": "",
   "python.showStartPage": false,
