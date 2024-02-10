@@ -1,5 +1,4 @@
 {
-  "CodeGPT.model": "gpt-4",
   "[css]": {
     "editor.colorDecorators": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -16,14 +15,19 @@
   },
   "[javascript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
+  "[javascript][javascriptreact][typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
   "[javascriptreact]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
@@ -39,7 +43,7 @@
   },
   "[markdown]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.markdownlint": true
+      "source.fixAll.markdownlint": "explicit"
     },
     "editor.quickSuggestions": {
       "comments": "on",
@@ -47,12 +51,9 @@
       "strings": "on"
     }
   },
-  "[php]": {
-    "editor.defaultFormatter": "junstyle.php-cs-fixer"
-  },
   "[python]": {
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     },
     "editor.defaultFormatter": "ms-python.python",
     "editor.tabSize": 4
@@ -69,7 +70,7 @@
   },
   "[typescript]": {
     "editor.codeActionsOnSave": {
-      "source.fixAll.eslint": true
+      "source.fixAll.eslint": "explicit"
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -81,15 +82,12 @@
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.tabSize": 2
   },
-  "arduino.useArduinoCli": true,
   "beautify.language": {
     "html": [
       "django-html"
     ]
   },
-  "code-runner.clearPreviousOutput": true,
-  "code-runner.runInTerminal": true,
-  "code-runner.saveFileBeforeRun": true,
+  "CodeGPT.model": "gpt-4",
   "codeQL.telemetry.enableTelemetry": true,
   "comment-divider.shouldLengthIncludeIndent": true,
   "diffEditor.ignoreTrimWhitespace": false,
@@ -97,6 +95,8 @@
   "editor.acceptSuggestionOnEnter": "off",
   "editor.bracketPairColorization.enabled": true,
   "editor.codeLensFontFamily": "Jetbrains Mono",
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on",
   "editor.defaultFormatter": null,
   "editor.folding": false,
   "editor.fontFamily": "Jetbrains Mono, Consolas, 'Courier New', monospace",
@@ -122,6 +122,7 @@
   "editor.suggest.preview": true,
   "editor.suggestSelection": "first",
   "editor.tabSize": 2,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
   "emmet.excludeLanguages": [
     "markdown"
   ],
@@ -130,20 +131,20 @@
   "emmet.showSuggestionsAsSnippets": true,
   "emmet.triggerExpansionOnTab": true,
   "errorLens.fontStyleItalic": true,
-  "errorLens.gutterIconSet": "defaultOutline",
   "errorLens.gutterIconsEnabled": true,
+  "errorLens.gutterIconSet": "defaultOutline",
   "explorer.autoReveal": "focusNoScroll",
   "explorer.compactFolders": false,
   "explorer.confirmDragAndDrop": false,
   "files.associations": {
+    ".coveragerc": "ini",
+    ".env.local": "jinja-properties",
+    ".htmlvalidateignore": "gitignore",
     "*.css": "css",
     "*.html.erb": "erb",
     "*.jinja": "jinja",
     "*.jsx": "javascriptreact",
     "*.php": "php",
-    ".coveragerc": "ini",
-    ".env.local": "jinja-properties",
-    ".htmlvalidateignore": "gitignore",
     "LICENSE": "plaintext"
   },
   "files.eol": "\n",
@@ -171,9 +172,10 @@
       "typescriptreact": true
     }
   },
+  "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
     "*": true,
-    "css": false,
+    "css": true,
     "erb": false,
     "javascript": true,
     "javascriptreact": true,
@@ -182,18 +184,21 @@
     "plaintext": false,
     "python": true,
     "ruby": true,
+    "rust": true,
     "scminput": false,
     "scss": true,
     "sql": true,
     "typescript": true,
     "yaml": true
   },
-  "github.copilot.inlineSuggest.enable": true,
   "githubPullRequests.createOnPublishBranch": "never",
   "githubPullRequests.pullBranch": "never",
   "gitlens.advanced.messages": {
     "suppressCreatePullRequestPrompt": true
   },
+  "gitlens.ai.experimental.generateCommitMessage.enabled": false,
+  "gitlens.ai.experimental.openai.model": "gpt-4-1106-preview",
+  "gitlens.ai.experimental.provider": "openai",
   "gitlens.codeLens.scopes": [
     "document",
     "containers",
@@ -221,7 +226,6 @@
   "license.year": "auto",
   "liveServer.settings.donotShowInfoMsg": true,
   "liveServer.settings.donotVerifyTags": true,
-  "markdown-preview-enhanced.previewTheme": "github-light.css",
   "markdown-preview-github-styles.colorTheme": "system",
   "notebook.cellToolbarLocation": {
     "default": "right",
@@ -238,6 +242,7 @@
   "python.interpreter.infoVisibility": "always",
   "python.pythonPath": "",
   "python.showStartPage": false,
+  "react-native-tools.showUserTips": false,
   "redhat.telemetry.enabled": false,
   "remote.SSH.configFile": "",
   "remote.SSH.defaultExtensions": [
@@ -246,8 +251,21 @@
   "remote.SSH.remotePlatform": {},
   "rewrap.autoWrap.enabled": true,
   "rewrap.wrappingColumn": 80,
+  "sonarlint.focusOnNewCode": false,
   "sonarlint.rules": {
     "javascript:S6480": {
+      "level": "off"
+    },
+    "javascript:S6774": {
+      "level": "off"
+    },
+    "python:S107": {
+      "level": "off"
+    },
+    "python:S1722": {
+      "level": "off"
+    },
+    "python:S2325": {
       "level": "off"
     }
   },
@@ -264,18 +282,14 @@
   "terminal.integrated.scrollback": 10000,
   "terminal.integrated.shellIntegration.enabled": true,
   "testExplorer.useNativeTesting": false,
-  "vs-kubernetes": {
-    "vs-kubernetes.minikube-show-information-expiration": "2023-11-04T10:17:10.707Z",
-    "vscode-kubernetes.helm-path.linux": "/home/seapagan/.vs-kubernetes/tools/helm/linux-amd64/helm",
-    "vscode-kubernetes.kubectl-path.linux": "/home/seapagan/.vs-kubernetes/tools/kubectl/kubectl",
-    "vscode-kubernetes.kubectl-path.windows": "C:\\Users\\sea_p\\.vs-kubernetes\\tools\\kubectl\\kubectl.exe",
-    "vscode-kubernetes.minikube-path.linux": "/home/seapagan/.vs-kubernetes/tools/minikube/linux-amd64/minikube"
-  },
   "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
   "window.commandCenter": true,
   "window.restoreWindows": "none",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
   "window.zoomLevel": 1,
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#05ef3c"
+  },
   "workbench.colorTheme": "Cobalt2",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editorAssociations": {
@@ -283,5 +297,8 @@
   },
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "material-product-icons",
-  "workbench.startupEditor": "none"
+  "workbench.startupEditor": "none",
+  "workbench.tree.enableStickyScroll": false,
+  "workbench.tree.indent": 15,
+  "workbench.tree.renderIndentGuides": "always"
 }
