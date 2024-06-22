@@ -55,7 +55,7 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
     },
-    "editor.defaultFormatter": "ms-python.python",
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.tabSize": 4
   },
   "[ruby]": {
@@ -87,8 +87,6 @@
       "django-html"
     ]
   },
-  "CodeGPT.model": "gpt-4",
-  "codeQL.telemetry.enableTelemetry": true,
   "comment-divider.shouldLengthIncludeIndent": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "docker.images.sortBy": "CreatedTime",
@@ -152,7 +150,6 @@
     "**/.git": false
   },
   "files.insertFinalNewline": true,
-  "files.maxMemoryForLargeFilesMB": 8192,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
@@ -211,14 +208,12 @@
     "pull:command"
   ],
   "gitlens.hovers.currentLine.over": "line",
-  "highlight-matching-tag.highlightFromContent": true,
-  "highlight-matching-tag.highlightSelfClosing": true,
+  "gpgIndicator.enablePassphraseCache": true,
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
   "html.format.templating": true,
   "html.format.wrapLineLength": 80,
-  "isort.importStrategy": "fromEnvironment",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "license.author": "Grant Ramsay",
   "license.default": "mit",
@@ -229,19 +224,24 @@
   "markdown-preview-github-styles.colorTheme": "system",
   "notebook.cellToolbarLocation": {
     "default": "right",
-    "jupyter-notebook": "right"
+    "jupyter-notebook": "left"
   },
-  "notebook.output.textLineLimit": 500,
+  "notebook.consolidatedRunButton": true,
+  "notebook.defaultFormatter": "charliermarsh.ruff",
+  "notebook.formatOnSave.enabled": true,
+  "notebook.output.textLineLimit": 20,
   "notebook.output.wordWrap": true,
-  "open-in-browser.default": "firefox",
+  "notebook.showFoldingControls": "always",
+  "open-in-browser.default": "chrome",
   "php.suggest.basic": true,
   "php.validate.enable": true,
   "prettier.proseWrap": "always",
   "prettier.quoteProps": "preserve",
+  "prettier.tabWidth": 2,
+  "prisma.showPrismaDataPlatformNotification": false,
   "python.defaultInterpreterPath": ".venv/bin/python",
   "python.interpreter.infoVisibility": "always",
   "python.pythonPath": "",
-  "python.showStartPage": false,
   "react-native-tools.showUserTips": false,
   "redhat.telemetry.enabled": false,
   "remote.SSH.configFile": "",
@@ -266,6 +266,9 @@
       "level": "off"
     },
     "python:S2325": {
+      "level": "off"
+    },
+    "Web:S6851": {
       "level": "off"
     }
   },
