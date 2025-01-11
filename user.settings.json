@@ -55,7 +55,7 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
     },
-    "editor.defaultFormatter": "ms-python.python",
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.tabSize": 4
   },
   "[ruby]": {
@@ -82,13 +82,15 @@
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.tabSize": 2
   },
+  "[prisma]": {
+    "editor.defaultFormatter": "Prisma.prisma"
+  },
   "beautify.language": {
     "html": [
       "django-html"
     ]
   },
-  "CodeGPT.model": "gpt-4",
-  "codeQL.telemetry.enableTelemetry": true,
+  "codeQL.telemetry.enableTelemetry": false,
   "comment-divider.shouldLengthIncludeIndent": true,
   "diffEditor.ignoreTrimWhitespace": false,
   "docker.images.sortBy": "CreatedTime",
@@ -103,8 +105,6 @@
   "editor.fontLigatures": true,
   "editor.fontSize": 13,
   "editor.fontWeight": "normal",
-  "editor.formatOnPaste": true,
-  "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": true,
@@ -152,7 +152,6 @@
     "**/.git": false
   },
   "files.insertFinalNewline": true,
-  "files.maxMemoryForLargeFilesMB": 8192,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "git.autofetch": true,
@@ -174,21 +173,21 @@
   },
   "github.copilot.editor.enableAutoCompletions": true,
   "github.copilot.enable": {
-    "*": true,
-    "css": true,
-    "erb": false,
-    "javascript": true,
-    "javascriptreact": true,
-    "markdown": true,
-    "php": false,
+    "*": false,
     "plaintext": false,
-    "python": true,
+    "markdown": true,
+    "scminput": false,
+    "css": false,
+    "erb": false,
+    "javascript": false,
+    "javascriptreact": true,
+    "php": false,
+    "python": false,
     "ruby": true,
     "rust": true,
-    "scminput": false,
     "scss": true,
     "sql": true,
-    "typescript": true,
+    "typescript": false,
     "yaml": true
   },
   "githubPullRequests.createOnPublishBranch": "never",
@@ -211,14 +210,12 @@
     "pull:command"
   ],
   "gitlens.hovers.currentLine.over": "line",
-  "highlight-matching-tag.highlightFromContent": true,
-  "highlight-matching-tag.highlightSelfClosing": true,
+  "gpgIndicator.enablePassphraseCache": true,
   "html.format.endWithNewline": true,
   "html.format.indentHandlebars": true,
   "html.format.indentInnerHtml": true,
   "html.format.templating": true,
   "html.format.wrapLineLength": 80,
-  "isort.importStrategy": "fromEnvironment",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "license.author": "Grant Ramsay",
   "license.default": "mit",
@@ -231,17 +228,22 @@
     "default": "right",
     "jupyter-notebook": "right"
   },
-  "notebook.output.textLineLimit": 500,
+  "notebook.consolidatedRunButton": true,
+  "notebook.defaultFormatter": "charliermarsh.ruff",
+  "notebook.formatOnSave.enabled": true,
+  "notebook.output.textLineLimit": 20,
   "notebook.output.wordWrap": true,
-  "open-in-browser.default": "firefox",
+  "notebook.showFoldingControls": "always",
+  "open-in-browser.default": "chrome",
   "php.suggest.basic": true,
   "php.validate.enable": true,
   "prettier.proseWrap": "always",
   "prettier.quoteProps": "preserve",
+  "prettier.tabWidth": 2,
+  "prisma.showPrismaDataPlatformNotification": false,
   "python.defaultInterpreterPath": ".venv/bin/python",
   "python.interpreter.infoVisibility": "always",
   "python.pythonPath": "",
-  "python.showStartPage": false,
   "react-native-tools.showUserTips": false,
   "redhat.telemetry.enabled": false,
   "remote.SSH.configFile": "",
@@ -267,6 +269,15 @@
     },
     "python:S2325": {
       "level": "off"
+    },
+    "Web:S6851": {
+      "level": "off"
+    },
+    "typescript:S6848": {
+      "level": "off"
+    },
+    "typescript:S1082": {
+      "level": "off"
     }
   },
   "sql-formatter.uppercase": true,
@@ -283,7 +294,6 @@
   "terminal.integrated.shellIntegration.enabled": true,
   "testExplorer.useNativeTesting": false,
   "vsintellicode.modify.editor.suggestSelection": "choseToUpdateConfiguration",
-  "window.commandCenter": true,
   "window.restoreWindows": "none",
   "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}${separator}${appName}",
   "window.zoomLevel": 1,
@@ -295,10 +305,29 @@
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
-  "workbench.iconTheme": "material-icon-theme",
+  "workbench.iconTheme": "vscode-icons",
   "workbench.productIconTheme": "material-product-icons",
   "workbench.startupEditor": "none",
   "workbench.tree.enableStickyScroll": false,
   "workbench.tree.indent": 15,
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "gitlens.views.scm.grouped.views": {
+    "commits": false,
+    "branches": false,
+    "remotes": false,
+    "stashes": false,
+    "tags": false,
+    "worktrees": false,
+    "contributors": false,
+    "repositories": false,
+    "searchAndCompare": false,
+    "launchpad": false
+  },
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "notebook.lineNumbers": "on",
+  "git.openRepositoryInParentFolders": "never",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
