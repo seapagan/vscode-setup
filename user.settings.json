@@ -226,7 +226,7 @@
   "markdown-preview-github-styles.colorTheme": "system",
   "notebook.cellToolbarLocation": {
     "default": "right",
-    "jupyter-notebook": "right"
+    "jupyter-notebook": "left"
   },
   "notebook.consolidatedRunButton": true,
   "notebook.defaultFormatter": "charliermarsh.ruff",

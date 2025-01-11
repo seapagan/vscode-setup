@@ -1,0 +1,10 @@
+{
+  "editor.formatOnPaste": false,
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.mypy_cache": true
+  },
+  "git.alwaysSignOff": true,
+  "git.enableCommitSigning": true
+}
